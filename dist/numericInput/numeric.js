@@ -52,6 +52,7 @@ export class Numeric {
             btnReset.addEventListener('click', () => {
                 spanNum.innerHTML = ' 0 ';
                 btnPrevious.setAttribute('disabled', 'true');
+                compareNumber();
             });
             const checkValidate = () => {
                 if (parseInt(spanNum.innerHTML) <= 0) {
